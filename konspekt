@@ -1,0 +1,58 @@
+TypeScript asosiy tushunchalari
+TypeScript — bu Microsoft tomonidan yaratilgan va JavaScript asosida ishlovchi zamonaviy dasturlash tili hisoblanadi. U JavaScript’ni kengaytiradi va dastur yozish jarayonini yanada ishonchli hamda tartibli qilishga xizmat qiladi. TypeScript’ning asosiy maqsadi — xatolarni dastur ishga tushishidan oldin aniqlash va kodni tushunarli, boshqarilishi oson holga keltirishdir.
+TypeScript JavaScript’ning superseti bo‘lib, bu degani — mavjud JavaScript kodlarini hech qanday o‘zgartirishsiz TypeScript’da ishlatish mumkin. Shu bilan birga, TypeScript qo‘shimcha sintaksis va imkoniyatlarni taqdim etadi, bu esa katta loyihalarda juda muhimdir.
+TypeScript’ning eng asosiy afzalligi — type (ma’lumot turi) tizimi. JavaScript’da o‘zgaruvchi turi dastur bajarilish jarayonida o‘zgarishi mumkin bo‘lsa, TypeScript’da o‘zgaruvchilar, funksiya parametrlari va qaytadigan qiymatlar turi oldindan belgilanadi. Natijada xatolar kompilyatsiya vaqtidayoq aniqlanadi va dastur ancha barqaror bo‘ladi.
+TypeScript to‘g‘ridan-to‘g‘ri brauzerda ishlamaydi. Avval u maxsus kompilyator orqali JavaScript’ga o‘giriladi, so‘ng hosil bo‘lgan JavaScript kodi brauzer yoki server muhitida bajariladi. Shu sababli TypeScript’da yozilgan dasturlar barcha JavaScript qo‘llab-quvvatlanadigan platformalarda ishlaydi.
+TypeScript’da oddiy typelardan tashqari murakkab va kengaytirilgan typelar ham mavjud. Bu typelar ma’lumotlar bilan ishlashni yanada aniq va xavfsiz qiladi. Aynan shu imkoniyatlar TypeScript’ni professional loyihalarda keng qo‘llaniladigan tilga aylantirgan.
+TypeScript katta jamoalar bilan ishlashda juda qulay. Kodni o‘qish va tushunish osonlashadi, IDE’lar esa avtomatik to‘ldirish, xatolarni ko‘rsatish va maslahat berish imkoniyatlarini to‘liq taqdim etadi. Bu dasturchining samaradorligini oshiradi.
+Bugungi kunda TypeScript frontend va backend yo‘nalishlarida keng qo‘llaniladi. React, Angular, Vue kabi frontend texnologiyalar, shuningdek Node.js va NestJS kabi backend platformalar TypeScript bilan juda yaxshi ishlaydi. Angular’ning to‘liq TypeScript asosida yozilgani bu tilning ahamiyatini yanada oshiradi.
+I. Oddiy (Primitive) typelar
+1. number
+Number tipi barcha turdagi sonlarni qamrab oladi: butun, kasr, musbat va manfiy. TypeScript’da alohida integer yoki float typelari yo‘q, barcha sonlar number orqali ifodalanadi. Hisob-kitoblar va matematik amallar uchun ishlatiladi.
+2. string
+String tipi matnli qiymatlar uchun mo‘ljallangan. Ismlar, xabarlar, matnlar va foydalanuvchi kiritgan ma’lumotlar string sifatida belgilanadi.
+3. boolean
+Boolean faqat ikki qiymatni qabul qiladi: true yoki false. Shartlar va mantiqiy tekshiruvlarda qo‘llaniladi.
+4. bigint
+Bigint juda katta butun sonlar bilan ishlash imkonini beradi. Oddiy number aniqlikni yo‘qotadigan holatlarda bigint ishlatiladi.
+5. symbol
+Symbol takrorlanmas, noyob qiymat yaratish uchun xizmat qiladi. Asosan obyekt property’larini xavfsiz saqlashda qo‘llaniladi.
+II. Tuzilmaviy (Structural) typelar
+6. array
+Array bir xil turdagi elementlardan iborat ro‘yxatdir. TypeScript massiv ichidagi elementlar turini qat’iy nazorat qiladi.
+7. tuple
+Tuple — aniq tartib va turga ega bo‘lgan massiv. Har bir indeksdagi element turi oldindan belgilanadi.
+8. object
+Object murakkab tuzilmadagi ma’lumotlarni ifodalaydi. Unda property’lar va ularning typelari aniqlanadi.
+III. Maxsus (Special) typelar
+9. any
+Any istalgan qiymatni qabul qiladi va type tekshiruvini o‘chiradi. Tezkor ishlarda foydali, ammo katta loyihalarda tavsiya etilmaydi.
+10. unknown
+Unknown ham har qanday qiymatni qabul qiladi, lekin undan foydalanishdan oldin tekshiruv talab etadi. Any’dan xavfsizroq.
+11. void
+Void qiymat qaytarmaydigan funksiyalar uchun ishlatiladi.
+12. never
+Never hech qachon yakunlanmaydigan holatlarni ifodalaydi, masalan xato tashlaydigan funksiya.
+13. null va undefined
+Null — ataylab bo‘sh qiymat, undefined esa qiymat berilmagan holatni bildiradi. Strict rejimda ular alohida tekshiriladi.
+14. function type
+Function type funksiya parametrlari va qaytish turini aniqlab beradi.
+IV. Kengaytirilgan (Advanced) typelar
+15. union type
+Union bir o‘zgaruvchiga bir nechta type’dan birini qabul qilish imkonini beradi.
+16. intersection type
+Intersection bir nechta typelarni birlashtirib, ularning barcha xususiyatlarini o‘z ichiga oladi.
+17. literal type
+Literal type aniq qiymatlarni type sifatida ishlatishga imkon beradi.
+18. generic type
+Generic’lar moslashuvchan va qayta ishlatiladigan kod yozishga yordam beradi.
+V. Type bilan ishlash vositalari
+19. type alias
+Type alias murakkab typelarga nom berish va ularni qayta ishlatish uchun ishlatiladi.
+20. interface
+Interface obyekt tuzilmasini aniqlashda qo‘llaniladi va katta loyihalarda standartni saqlaydi.
+Qo‘shimcha tushunchalar
+21. optional va readonly
+Optional property’lar majburiy emas, readonly property’lar esa o‘zgartirib bo‘lmaydi.
+22. type narrowing
+Type narrowing shartlar orqali aniq type’ni aniqlash jarayonidir va union typelar bilan ishlashda muhim hisoblanadi.
